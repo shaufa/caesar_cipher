@@ -14,3 +14,9 @@ class Cipher
     ciphered
   end
 end
+
+print "What do you want to cipher?"
+string = gets.chomp
+print "What's the shift step?"
+shift_by = gets.chomp.to_i
+puts Cipher.new.encrypt(string, shift_by)
